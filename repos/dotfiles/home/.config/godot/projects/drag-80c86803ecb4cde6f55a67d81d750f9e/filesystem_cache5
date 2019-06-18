@@ -1,8 +1,0 @@
-e676c8cf538667c7b7492316723f6fe3
-::res://::1556909830
-default_env.tres::Environment::1556909828::0::1::<><>::
-Drag_and_Drop_Sprite.tscn::PackedScene::1556909828::0::1::<><>::res://icon.png<>res://Sprite.gd
-icon.png::StreamTexture::1556909828::1556909831::1::<><>::
-Main.gd::GDScript::1556909828::0::1::<>Node<>::
-Sprite.gd::GDScript::1556909828::0::1::<>Sprite<>::
-World.tscn::PackedScene::1556909828::0::1::<><>::res://Main.gd<>res://Drag_and_Drop_Sprite.tscn
