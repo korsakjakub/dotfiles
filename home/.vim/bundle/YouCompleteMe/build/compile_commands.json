@@ -1,0 +1,202 @@
+[
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/codecvt_error_category.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/codecvt_error_category.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/codecvt_error_category.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/operations.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/operations.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/operations.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/path.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/path.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/path.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/path_traits.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/path_traits.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/path_traits.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/portability.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/portability.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/portability.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/unique_path.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/unique_path.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/unique_path.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/utf8_codecvt_facet.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/utf8_codecvt_facet.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/utf8_codecvt_facet.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/filesystem/src/windows_file_codecvt.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/windows_file_codecvt.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/filesystem/src/windows_file_codecvt.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/c_regex_traits.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/c_regex_traits.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/c_regex_traits.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/cpp_regex_traits.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/cpp_regex_traits.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/cpp_regex_traits.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/cregex.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/cregex.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/cregex.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/fileiter.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/fileiter.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/fileiter.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/icu.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/icu.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/icu.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/instances.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/instances.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/instances.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/posix_api.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/posix_api.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/posix_api.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/regex.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/regex.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/regex.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/regex_debug.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/regex_debug.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/regex_debug.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/regex_raw_buffer.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/regex_raw_buffer.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/regex_raw_buffer.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/regex_traits_defaults.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/regex_traits_defaults.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/regex_traits_defaults.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/static_mutex.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/static_mutex.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/static_mutex.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/usinstances.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/usinstances.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/usinstances.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/w32_regex_traits.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/w32_regex_traits.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/w32_regex_traits.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/wc_regex_traits.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/wc_regex_traits.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/wc_regex_traits.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/wide_posix_api.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/wide_posix_api.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/wide_posix_api.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/BoostParts",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /usr/include/python2.7   -fvisibility=hidden -std=c++11 -w -O3 -DNDEBUG   -fPIC -o CMakeFiles/BoostParts.dir/libs/regex/src/winstances.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/winstances.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts/libs/regex/src/winstances.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/Candidate.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Candidate.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Candidate.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/CandidateRepository.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/CandidateRepository.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/CandidateRepository.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/Character.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Character.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Character.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/CharacterRepository.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/CharacterRepository.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/CharacterRepository.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/CodePoint.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/CodePoint.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/CodePoint.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/CodePointRepository.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/CodePointRepository.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/CodePointRepository.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/IdentifierCompleter.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierCompleter.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierCompleter.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/IdentifierDatabase.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierDatabase.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierDatabase.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/IdentifierUtils.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierUtils.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/IdentifierUtils.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/PythonSupport.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/PythonSupport.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/PythonSupport.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/Result.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Result.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Result.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/Utils.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Utils.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Utils.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/Word.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Word.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/Word.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/versioning.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/versioning.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/versioning.cpp"
+},
+{
+  "directory": "/home/jakub/.vim/bundle/YouCompleteMe/build/ycm",
+  "command": "/usr/bin/c++  -DYCMD_CORE_VERSION=42 -DYCM_EXPORT=\"\" -Dycm_core_EXPORTS -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/pybind11 -isystem /usr/include/python2.7 -isystem /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include   -fvisibility=hidden -std=c++11 -O3 -DNDEBUG -fPIC   -o CMakeFiles/ycm_core.dir/ycm_core.cpp.o -c /home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ycm_core.cpp",
+  "file": "/home/jakub/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ycm_core.cpp"
+}
+]
