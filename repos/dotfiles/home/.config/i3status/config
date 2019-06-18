@@ -1,0 +1,39 @@
+general {
+        colors = true
+        interval = 1
+}
+
+order += "disk /"
+order += "cpu_usage"
+order += "wireless _first_"
+order += "volume master"
+order += "battery all"
+order += "tztime local"
+
+wireless _first_ {
+        format_up = "%essid"
+        format_down = "nope"
+}
+
+cpu_usage {
+        format = "💻: %usage"
+}
+
+
+volume master {
+        device = "pulse"
+        format = "♪: %volume"
+        format_muted = "muted"
+}
+
+battery all {
+        format = "⚡: %percentage"
+}
+
+tztime local {
+        format = "%H:%M:%S %d.%m.%Y"
+}
+
+disk "/" {
+        format = "🏠: %avail"
+}

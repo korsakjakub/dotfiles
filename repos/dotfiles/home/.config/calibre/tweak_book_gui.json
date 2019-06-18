@@ -1,0 +1,140 @@
+{
+  "check-book-splitter-state": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAEAAAACAAAARgAAAEYA/////wEAAAABAA=="
+  }, 
+  "custom_colors_for_color_dialog": [
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ]
+  ], 
+  "find-widget-state": {
+    "case_sensitive": false, 
+    "direction": "down", 
+    "dot_all": false, 
+    "mode": "normal", 
+    "where": "current", 
+    "wrap": true
+  }, 
+  "import-foreign-geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAHTAAABTgAAA80AAAIPAAAB1QAAAU4AAAPLAAACDQAAAAAAAAAABaAAAAHVAAABTgAAA8sAAAIN"
+  }, 
+  "main_window_geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywADAAAAAAAAAAAAEgAABZ8AAANwAAAAAgAAABIAAAWdAAADbgAAAAAAAAAABaAAAAACAAAAEgAABZ0AAANu"
+  }, 
+  "main_window_state": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAAEAAAADCvwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAAD0AAAMKAAAAWQD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFkA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAHwA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIoA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAgcA////AAAAAQAAAeAAAAMK/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAPQAAAwoAAABAAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABZAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAkAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAApAP///wAAArAAAAMKAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABJv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
+  }, 
+  "recent-books": [
+    "/tmp/lu1423s7xdpq.tmp/NewHelp0.epub"
+  ], 
+  "reports-ui-state": {}, 
+  "saved_seaches_state": {
+    "direction": "down", 
+    "where": "current", 
+    "wrap": true
+  }, 
+  "search-panel-visible": false, 
+  "text_search_widget_state": {
+    "case_sensitive": false, 
+    "dot_all": true, 
+    "mode": "normal", 
+    "where": "current"
+  }
+}

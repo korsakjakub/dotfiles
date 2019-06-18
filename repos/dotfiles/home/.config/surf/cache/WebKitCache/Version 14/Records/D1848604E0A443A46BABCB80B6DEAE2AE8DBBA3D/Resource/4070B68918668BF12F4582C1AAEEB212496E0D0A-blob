@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#dab084"/>
+        <meta property="og:description" content="
+        Variables - Part 1 - From the Shell Scripting Tutorial at https://www.shellscript.sh/        "/>
+        <meta property="og:title" content="Shell Scripting Tutorial" />
+<meta property='og:image' content='https://www.shellscript.sh/img/wordcloud.png' />
+        <meta property="og:type" content="website" />
+        <meta property="fb:admins" content="shellscripting" />
+        <meta property="og:url" content="https://www.shellscript.sh/variables1.html" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+        Understanding Shell Script Variables        </title>
+        <meta name="description" content="
+	"Variables - Part 1" - A Bourne Shell Programming / Scripting Tutorial for learning about using the Unix shell.	" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="canonical" href="https://www.shellscript.sh/variables1.html" />
+        <link rel="stylesheet" href="/css/shellscript.css">
+        <script src="/js/vendor/jquery-1.10.2.min.js"></script>
+        <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Shell Scripting RSS Feed">
+
+
+    </head>
+    <body>
+<!-- BuySellAds Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds Ad Code -->
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+        <div class="responsive-header visible-xs visible-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-section">
+                            <div class="profile-image">
+                                <img src="/img/wordcloud_profile.png" alt="Shell Scripting Tutorial">
+                            </div>
+                            <div class="profile-content">
+                                <h3 class="profile-title">Shell Scripting Tutorial</h3>
+                                <p class="profile-description">The Linux Shell Scripting Tutorial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                <div class="main-navigation responsive-menu">
+                    <ul>
+                    <li><a href="/tips/"><i class="fa fa-star-o"></i>NEW: Shell Scripting Tips</a><br/></li> 
+                    <li><a href="/index.html"><i class="fa fa-arrow-right"></i>1. Introduction</a></li>
+                    <li><a href="/philosophy.html"><i class="fa fa-arrow-right"></i>2. Philosophy</a></li>
+                    <li><a href="/first.html"><i class="fa fa-arrow-right"></i>3. A First Script</a></li>
+                    <li><a href="/variables1.html"><i class="fa fa-arrow-right"></i>4. Variables (Part 1)</a></li>
+                    <li><a href="/wildcards.html"><i class="fa fa-arrow-right"></i>5. Wildcards</a></li>
+                    <li><a href="/escape.html"><i class="fa fa-arrow-right"></i>6. Escape Characters</a></li>
+                    <li><a href="/loops.html"><i class="fa fa-arrow-right"></i>7. Loops</a></li>
+                    <li><a href="/test.html"><i class="fa fa-arrow-right"></i>8. Test</a></li>
+                    <li><a href="/case.html"><i class="fa fa-arrow-right"></i>9. Case</a></li>
+                    <li><a href="/variables2.html"><i class="fa fa-arrow-right"></i>10. Variables (Part 2)</a></li>
+                    <li><a href="/variables3.html"><i class="fa fa-arrow-right"></i>11. Variables (Part 3)</a></li>
+                    <li><a href="/external.html"><i class="fa fa-arrow-right"></i>12. External Programs</a></li>
+                    <li><a href="/functions.html"><i class="fa fa-arrow-right"></i>13. Functions</a></li>
+                    <li><a href="/hints.html"><i class="fa fa-arrow-right"></i>14. Hints and Tips</a></li>
+                    <li><a href="/quickref.html"><i class="fa fa-arrow-right"></i>15. Quick Reference</a></li>
+                    <li><a href="/interactive.html"><i class="fa fa-arrow-right"></i>16. Interactive Shell</a></li>
+                    <li><a href="/exercises.html"><i class="fa fa-arrow-right"></i>17. Exercises</a></li>
+                    </ul>
+                     <ul class="navigation">
+                        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="sidebar-menu hidden-xs hidden-sm">
+            <div class="top-section">
+                <div class="profile-image">
+                    <img src="/img/wordcloud_profile.png" alt="Shell Scripting Tutorial">
+                </div>
+                <h3 class="profile-title">Shell Scripting Tutorial</h3>
+                <p class="profile-description">
+A Bourne Shell Programming / Scripting Tutorial for learning about using the Unix shell. Learn Linux / Unix shell scripting by example along with the theory. I'll have you mastering Unix shell scripting in no time.<br/>
+</p>
+
+            </div> <!-- top-section -->
+            <div class="main-navigation">
+<center>
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gum.co/shellscript" target="_blank">Buy this tutorial as a PDF ($5)</a>
+</center>
+                <ul>
+                    <li><a href="/tips/"><i class="fa fa-star-o"></i>NEW: Shell Scripting Tips</a><br/></li>
+                    <li><a href="/index.html"><i class="fa fa-arrow-right"></i>1. Introduction</a></li>
+                    <li><a href="/philosophy.html"><i class="fa fa-arrow-right"></i>2. Philosophy</a></li>
+                    <li><a href="/first.html"><i class="fa fa-arrow-right"></i>3. A First Script</a></li>
+                    <li><a href="/variables1.html"><i class="fa fa-arrow-right"></i>4. Variables (Part 1)</a></li>
+                    <li><a href="/wildcards.html"><i class="fa fa-arrow-right"></i>5. Wildcards</a></li>
+                    <li><a href="/escape.html"><i class="fa fa-arrow-right"></i>6. Escape Characters</a></li>
+                    <li><a href="/loops.html"><i class="fa fa-arrow-right"></i>7. Loops</a></li>
+                    <li><a href="/test.html"><i class="fa fa-arrow-right"></i>8. Test</a></li>
+                    <li><a href="/case.html"><i class="fa fa-arrow-right"></i>9. Case</a></li>
+                    <li><a href="/variables2.html"><i class="fa fa-arrow-right"></i>10. Variables (Part 2)</a></li>
+                    <li><a href="/variables3.html"><i class="fa fa-arrow-right"></i>11. Variables (Part 3)</a></li>
+                    <li><a href="/external.html"><i class="fa fa-arrow-right"></i>12. External Programs</a></li>
+                    <li><a href="/functions.html"><i class="fa fa-arrow-right"></i>13. Functions</a></li>
+                    <li><a href="/hints.html"><i class="fa fa-arrow-right"></i>14. Hints and Tips</a></li>
+                    <li><a href="/quickref.html"><i class="fa fa-arrow-right"></i>15. Quick Reference</a></li>
+                    <li><a href="/interactive.html"><i class="fa fa-arrow-right"></i>16. Interactive Shell</a></li>
+                    <li><a href="/exercises.html"><i class="fa fa-arrow-right"></i>17. Exercises</a></li>
+                    </ul>
+                     <ul class="navigation">
+                    <li><a href="#publications"><i class="fa fa-book"></i>Publications</a></li>
+                    <li><a href="#contact"><i class="fa fa-link"></i>Contact Me</a></li>
+                </ul>
+
+            </div> <!-- .main-navigation -->
+            <div class="social-icons">
+<!--
+                <ul>
+                    <li><a href="http://facebook.com/shellscript"><i class="fa fa-facebook"></i></a><br/>
+                </ul>
+-->
+<div class="fb-page" data-href="https://www.facebook.com/shellscript/" data-tabs="timeline" data-width="280" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/shellscript/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/shellscript/">Shell Scripting</a></blockquote></div>
+            </div> <!-- .social-icons -->
+        </div> <!-- .sidebar-menu -->
+        
+
+        <div class="banner-bg" id="top">
+            <div class="banner-overlay"></div>
+            <div class="welcome-text">
+                <h2>Shell Scripting Tutorial</h2>
+                <h3>Variables - Part 1</h3>                <!-- <h5>A Bourne Shell Programming / Scripting Tutorial for learning about using the Unix shell. Learn Linux / Unix shell scripting by example along with the theory. </h5> -->
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+
+                <div class="content-wrapper">
+                    <div class="page-section" id="content">
+      <div align="right"> <a href="/rss.xml"><img src="/img/rss.png" title="RSS Feed" alt="RSS Feed"></a>
+<A href="http://twitter.com/home?status=Variables+-+Part+1 - https://www.shellscript.sh/variables1.html" target="_blank"><img src="/img/twitter.png" width="23" height="23" alt="Share on Twitter" border="0"/></A> 
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.shellscript.sh%2Fvariables1.html&layout=button&size=small&mobile_iframe=true&width=68&height=20&appId" width="68" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<!-- <A href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.shellscript.sh/variables1.html&title=Variables+-+Part+1&summary=A%20Bourne%20Shell%20Programming/Scripting%20Tutorial%20for%20learning%20about%20using%20the%20Unix%20shell.%20Learn%20Linux%20/%20Unix%20shell%20scripting%20by%20example%20along%20with%20the%20theory.%20We%27ll%20have%20you%20mastering%20Unix%20shell%20scripting%20in%20no%20time!" target="_blank"><img src="/img/linkedin.png" width="24" height="23" alt="Share on LinkedIn" border="0"/></A> -->
+<!-- <A href="http://identi.ca/notice/new?status_textarea=https://www.shellscript.sh/variables1.html" target="_blank"><img src="/img/identica.png" width="23" height="24" alt="Share on Identi.ca" border="0"/></A> -->
+<!-- <A href="http://www.stumbleupon.com/submit?url=https://www.shellscript.sh/variables1.html&title=Variables - Part 1" target="_blank"><img src="/img/stumble.png" width="23" height="23" alt="Share on StumbleUpon" border="0"/></A> -->
+</div>
+<p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3578434180456831"
+     data-ad-slot="4773217603"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p><p>
+<!-- BuySellAds Zone Code -->
+<div id="bsap_1307774" class="bsarocks bsap_3a2eee0f7e35eeb24a884281be005515"></div>
+<!-- End BuySellAds Zone Code -->
+</p><p>
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://gum.co/shellscript" target="_blank">You can now buy this tutorial as a PDF for $5!</a>
+
+<h1>
+4. Variables - Part I
+</h1>
+<p>
+Just about every programming language in existence has the concept
+of <i>variables</i> - a symbolic name for a chunk of memory to which
+we can assign values, read and manipulate its contents. The Bourne
+shell is no exception, and this section introduces that idea. This is 
+taken further in <a href="./variables2.html">Variables - Part II</a>
+
+which looks into variables which are set for us by the environment.
+<br>
+Let's look back at our first Hello World example. This could be done
+using variables (though it's such a simple example that it doesn't
+really warrant it!)
+<br>
+Note that there must be no spaces around the "=" sign: <code>VAR=value</code> works; <code>VAR = value</code> doesn't work.
+In the first case, the shell sees the "=" symbol and treats the command as a variable assignment. 
+In the second case, the shell assumes that VAR must be the name of a command and tries to execute it.<br>
+If you think about it, this makes sense - how else could you tell it to run the command VAR with its first
+argument being "=" and its second argument being "value"?
+<br>
+Enter the following code into var.sh:
+</p>
+<hr align="left" noshade="noshade" width="40%">
+
+<a href="eg/var.sh.txt">var.sh</a>
+<pre class="prettyprint lang-sh"><span class="com">#!/bin/sh</span><span class="pln"><br>MY_MESSAGE</span><span class="pun">=</span><span class="str">"Hello World"</span><span class="pln"><br></span><span class="kwd">echo</span><span class="pln"> $MY_MESSAGE</span></pre>
+<hr align="left" noshade="noshade" width="40%">
+<p>
+This assigns the string "Hello World" to the variable
+<code>MY_MESSAGE</code> then <code>echo</code>es out the value of
+the variable.
+
+<br>
+Note that we need the quotes around the string Hello World. Whereas
+we could get away with <code>echo Hello World</code> because echo
+will take any number of parameters, a variable can only hold one value,
+so a string with spaces must be quoted so that the shell knows to treat
+it all as one. Otherwise, the shell will try to execute the command <code>World</code>
+after assigning <code>MY_MESSAGE=Hello</code>
+</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3578434180456831"
+     data-ad-slot="4773217603"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>
+The shell does not care about types of variables; they may store strings,
+integers, real numbers - anything you like. 
+<br>
+People used to Perl may be quite happy with this; if you've grown up with C, Pascal,
+or worse yet Ada, this may seem quite strange. 
+<br>
+In truth, these are all stored as strings, but routines which expect a number can treat them as such.
+<br>
+
+If you assign a string to a variable then try to add 1 to it, you will not get away with it:
+</p>
+<pre class="prettyprint lang-sh"><span class="pln">$ x</span><span class="pun">=</span><span class="str">"hello"</span><span class="pln"><br>$ expr $x + 1<br/><span class="kwd">expr</span><span class="pun">:</span><span class="pln"> non</span><span class="pun">-</span><span class="pln">numeric argument<br>$</span></pre>
+<p>
+
+This is because the external program <code>expr</code> only expects numbers.
+But there is no syntactic difference between:
+</p>
+<pre class="prettyprint lang-sh"><span class="pln">MY_MESSAGE</span><span class="pun">=</span><span class="str">"Hello World"</span><span class="pln"><br>MY_SHORT_MESSAGE</span><span class="pun">=</span><span class="pln">hi<br>MY_NUMBER</span><span class="pun">=</span><span class="lit">1</span><span class="pln"><br>MY_PI</span><span class="pun">=</span><span class="lit">3.142</span><span class="pln"><br>MY_OTHER_PI</span><span class="pun">=</span><span class="str">"3.142"</span><span class="pln"><br>MY_MIXED</span><span class="pun">=</span><span class="lit">123abc</span></pre>
+
+<p>
+Note though that special characters must be properly escaped to avoid
+interpretation by the shell.
+<br>
+This is discussed further in Chapter 6, <a href="./escape.html">Escape Characters</a>.
+</p><p>
+We can interactively set variable names using the <code>read</code> command;
+ the following script asks you for your name then greets you personally:
+</p>
+<hr align="left" noshade="noshade" width="40%">
+<a href="eg/var2.sh.txt">var2.sh</a>
+<pre class="prettyprint lang-sh"><span class="com">#!/bin/sh</span><span class="pln"><br></span><span class="kwd">echo</span><span class="pln"> What is your name</span><span class="pun">?</span><span class="pln"><br></span><span class="kwd">read</span><span class="pln"> MY_NAME<br></span><span class="kwd">echo</span><span class="pln"> </span><span class="str">"Hello $MY_NAME - hope you're well."</span></pre>
+
+<p>
+Mario Bacinsky kindly pointed out to me that I had originally missed
+out the double-quotes in line 3, which meant that the single-quote in the
+word "you're" was unmatched, causing an error. It is this kind of thing
+which can drive a shell programmer crazy, so watch out for them!
+</p>
+This is using the shell-builtin command <code>read</code> which reads a
+line from standard input into the variable supplied.
+<br>
+Note that even if you give it your full name and don't use double quotes
+around the <code>echo</code> command, it still outputs correctly. How
+is this done? With the <code>MY_MESSAGE</code> variable earlier we had
+to put double quotes around it to set it.
+
+<br>
+What happens, is that the <code>read</code> command automatically places
+quotes around its input, so that spaces are treated correctly. (You will
+need to quote the output, of course - e.g. <code>echo "$MY_MESSAGE"</code>).
+</p>
+<a name="scope"></a>
+<h2>
+Scope of Variables</h2>
+<p>
+Variables in the Bourne shell do not have to be declared, as they do in 
+languages like C. But if you try to read an undeclared variable,
+the result is the empty string. You get no warnings or errors. This can cause
+some subtle bugs - if you assign <br/><code>MY_OBFUSCATED_VARIABLE=Hello</code><br/>and 
+then <br/><code>echo $MY_OSFUCATED_VARIABLE</code>
+<br/>
+Then you will get nothing (as the second
+OBFUSCATED is mis-spelled).
+
+</p><p>
+There is a command called <code>export</code> which has a fundamental
+effect on the scope of variables. In order to really know what's going
+on with your variables, you will need to understand something about how
+this is used.
+</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3578434180456831"
+     data-ad-slot="4773217603"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>
+Create a small shell script, <code>myvar2.sh</code>:</p>
+
+<hr align="left" noshade="noshade" width="40%">
+<a href="eg/myvar2.sh.txt">myvar2.sh</a>
+<pre class="prettyprint lang-sh"><span class="com">#!/bin/sh</span><span class="pln"><br></span><span class="kwd">echo</span><span class="pln"> </span><span class="str">"MYVAR is: $MYVAR"</span><span class="pln"><br>MYVAR</span><span class="pun">=</span><span class="str">"hi there"</span><span class="pln"><br></span><span class="kwd">echo</span><span class="pln"> </span><span class="str">"MYVAR is: $MYVAR"</span></pre>
+<hr align="left" noshade="noshade" width="40%">
+<p>
+Now run the script:
+
+</p>
+<pre class="prettyprint lang-sh"><span class="pln">$ </span><span class="pun">./</span><span class="pln">myvar2</span><span class="pun">.</span><span class="pln">sh<br>MYVAR is</span><span class="pun">:</span><span class="pln"><br>MYVAR is</span><span class="pun">:</span><span class="pln"> hi there</span></pre>
+<p>
+MYVAR hasn't been set to any value, so it's blank. Then we give it a value, and it
+has the expected result.
+<br>
+Now run:
+
+</p>
+<pre class="prettyprint lang-sh"><span class="pln">$ MYVAR</span><span class="pun">=</span><span class="pln">hello<br>$ </span><span class="pun">./</span><span class="pln">myvar2</span><span class="pun">.</span><span class="pln">sh<br>MYVAR is</span><span class="pun">:</span><span class="pln"><br>MYVAR is</span><span class="pun">:</span><span class="pln"> hi there</span></pre>
+<p>
+
+It's still not been set! What's going on?!
+<br>
+When you call <code>myvar2.sh</code> from your interactive shell, a new
+shell is spawned to run the script. This is partly because of the <code>#!/bin/sh</code>
+line at the start of the script, which we discussed <a href="first.html">earlier</a>.
+<br> 
+We need to <code>export</code> the variable for it to be inherited by another program - 
+including a shell script. Type:
+</p>
+
+<pre class="prettyprint lang-sh"><span class="pln">$ </span><span class="kwd">export</span><span class="pln"> MYVAR<br>$ </span><span class="pun">./</span><span class="pln">myvar2</span><span class="pun">.</span><span class="pln">sh<br>MYVAR is</span><span class="pun">:</span><span class="pln"> hello<br>MYVAR is</span><span class="pun">:</span><span class="pln"> hi there</span></pre>
+
+<p>
+Now look at line 3 of the script: this is changing the value of
+<code>MYVAR</code>. But there is no way that this will be passed back
+to your interactive shell. Try reading the value of <code>MYVAR</code>:
+</p>
+<pre class="prettyprint lang-sh"><span class="pln">$ </span><span class="kwd">echo</span><span class="pln"> $MYVAR<br>hello<br>$</span></pre>
+<p>
+Once the shell script exits, its environment
+is destroyed. But <code>MYVAR</code> keeps its value of <code>hello</code>
+
+within your interactive shell.
+<br>
+In order to receive environment changes back from the script, we must
+<i>source</i> the script - this effectively runs the script within our
+own interactive shell, instead of spawning another shell to run it.
+<br>
+We can source a script via the "." (dot) command:
+</p>
+<pre class="prettyprint lang-sh"><span class="pln">$ MYVAR</span><span class="pun">=</span><span class="pln">hello<br>$ </span><span class="kwd">echo</span><span class="pln"> $MYVAR<br>hello<br>$ </span><span class="pun">.</span><span class="pln"> </span><span class="pun">./</span><span class="pln">myvar2</span><span class="pun">.</span><span class="pln">sh<br>MYVAR is</span><span class="pun">:</span><span class="pln"> hello<br>MYVAR is</span><span class="pun">:</span><span class="pln"> hi there<br>$ </span><span class="kwd">echo</span><span class="pln"> $MYVAR<br>hi there</span></pre>
+
+<p>
+The change has now made it out into our shell again! This is how your
+<code>.profile</code> or <code>.bash_profile</code> file works, for example.<br>
+Note that in this case, we don't need to <code>export MYVAR</code>.
+<br>
+Thanks to <i>sway</i> for pointing out that I'd originally said <code>echo MYVAR</code> above, not
+<code>echo $MYVAR</code> as it should be. Another example of an easy mistake to make with shell scripts.
+One other thing worth mentioning at this point about variables, is to
+consider the following shell script:</p>
+<hr align="left" noshade="noshade" width="40%">
+<pre class="prettyprint lang-sh"><span class="com">#!/bin/sh</span><span class="pln"><br></span><span class="kwd">echo</span><span class="pln"> </span><span class="str">"What is your name?"</span><span class="pln"><br></span><span class="kwd">read</span><span class="pln"> USER_NAME<br></span><span class="kwd">echo</span><span class="pln"> </span><span class="str">"Hello $USER_NAME"</span><span class="pln"><br></span><span class="kwd">echo</span><span class="pln"> </span><span class="str">"I will create you a file called $USER_NAME_file"</span><span class="pln"><br></span><span class="kwd">touch</span><span class="pln"> $USER_NAME_file</span></pre>
+
+<hr align="left" noshade="noshade" width="40%">
+<p>
+Think about what result you would expect. For example, if you enter "steve"
+as your USER_NAME, should the script create <code>steve_file</code>?<br>
+Actually, no.  This will cause an error unless there is a variable called 
+<code>USER_NAME_file</code>. The shell does not know where the variable
+ends and the rest starts. 
+How can we define this?
+<br>
+The answer is, that we enclose the variable itself in <i>curly brackets</i>:
+</p>
+<hr align="left" noshade="noshade" width="40%">
+<a href="eg/user.sh.txt">user.sh</a>
+<pre class="prettyprint lang-sh"><span class="com">#!/bin/sh</span><span class="pln"><br></span><span class="kwd">echo</span><span class="pln"> </span><span class="str">"What is your name?"</span><span class="pln"><br></span><span class="kwd">read</span><span class="pln"> USER_NAME<br></span><span class="kwd">echo</span><span class="pln"> </span><span class="str">"Hello $USER_NAME"</span><span class="pln"><br></span><span class="kwd">echo</span><span class="pln"> </span><span class="str">"I will create you a file called ${USER_NAME}_file"</span><span class="pln"><br></span><span class="kwd">touch</span><span class="pln"> </span><span class="str">"${USER_NAME}_file"</span></pre>
+
+<hr align="left" noshade="noshade" width="40%">
+<p>
+The shell now knows that we are referring to the variable <code>USER_NAME</code>
+and that we want it suffixed with "<code>_file</code>". This can be the
+downfall of many a new shell script programmer, as the source of the problem
+can be difficult to track down.</p><p>
+Also note the quotes around <code>"${USER_NAME}_file"</code> - if the user entered "Steve Parker" (note the
+space) then without the quotes, the arguments passed to <code>touch</code> would be <code>Steve</code> and
+
+<code>Parker_file</code> - that is, we'd effectively be saying <code>touch Steve Parker_file</code>, which
+is two files to be <code>touch</code>ed, not one. The quotes avoid this. Thanks to Chris for highlighting this.
+</p>
+
+            
+    <center>
+      <a href="/rss.xml"><img src="/img/rss.png" title="RSS Feed" alt="RSS Feed"></a>
+<A href="http://twitter.com/home?status=Variables+-+Part+1 - https://www.shellscript.sh/variables1.html" target="_blank"><img src="/img/twitter.png" width="23" height="23" alt="Share on Twitter" border="0"/></A> 
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.shellscript.sh%2Fvariables1.html&layout=button&size=small&mobile_iframe=true&width=68&height=20&appId" width="68" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<!-- <A href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.shellscript.sh/variables1.html&title=Variables+-+Part+1&summary=A%20Bourne%20Shell%20Programming/Scripting%20Tutorial%20for%20learning%20about%20using%20the%20Unix%20shell.%20Learn%20Linux%20/%20Unix%20shell%20scripting%20by%20example%20along%20with%20the%20theory.%20We%27ll%20have%20you%20mastering%20Unix%20shell%20scripting%20in%20no%20time!" target="_blank"><img src="/img/linkedin.png" width="24" height="23" alt="Share on LinkedIn" border="0"/></A> -->
+<!-- <A href="http://identi.ca/notice/new?status_textarea=https://www.shellscript.sh/variables1.html" target="_blank"><img src="/img/identica.png" width="23" height="24" alt="Share on Identi.ca" border="0"/></A> -->
+<!-- <A href="http://www.stumbleupon.com/submit?url=https://www.shellscript.sh/variables1.html&title=Variables - Part 1" target="_blank"><img src="/img/stumble.png" width="23" height="23" alt="Share on StumbleUpon" border="0"/></A> -->
+<br />
+      <a class="btn btn-primary btn-lg" href="/first.html" role="button"><i class="fa fa-chevron-left"></i> Back:  A First Script</a>
+      <a class="btn btn-primary btn-lg" href="/wildcards.html" role="button">Next: Wildcards <i class="fa fa-chevron-right"></i></a>
+    </center>
+
+                    
+<p>&nbsp;</p>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+            <!-- BOOKS START -->
+<br/>
+<h2>You can buy the content of this tutorial as a PDF to download to all of your devices!</h2>
+<script src="https://gumroad.com/js/gumroad-embed.js"></script>
+<div class="gumroad-product-embed" data-gumroad-product-id="shellscript"><a href="https://gumroad.com/l/shellscript">Loading...</a></div>
+            <!-- BOOKS END -->
+<!-- FOOTER AD -->
+	<a name="publications"></a>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- sh-auto -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3578434180456831"
+     data-ad-slot="8340980804"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- FOOTER AD END -->
+                    <!-- CONTACT -->
+                    <div class="page-section" id="contact">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">Contact</h4>
+                            <p>You can mail me with this form. If you expect a reply, please ensure that the address you specify is valid. Don't forget to include the simple addition question at the end of the form, to prove that you are a real person!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form id="mailForm" action="https://mail.shellscript.sh/mail/index.php" method="post" class="contact-form">
+                            <fieldset class="col-md-4 col-sm-6">
+                                <input type="text" name="8kfW-Name-pJYZ" id="8kfW-Name-pJYZ" placeholder="Your Name...">
+                            </fieldset>
+                            <fieldset class="col-md-4 col-sm-6">
+                                <input type="email" name="EnVF-email-5n79" id="email" placeholder="Your Email...">
+                            </fieldset>
+                            <fieldset class="col-md-4 col-sm-12">
+                                <input type="text" name="QnN6-Subject-0vY5" id="QnN6-Subject-0vY5" placeholder="Subject...">
+                            </fieldset>
+                            <fieldset class="col-md-12 col-sm-12">
+                                <textarea name="message" id="message" cols="30" rows="6" placeholder="Leave your message..."></textarea>
+                            </fieldset>
+                            <fieldset class="col-md-12 col-sm-6">
+                                <input type="hidden" id="maths_a" name="maths_a" value="0"><input type="hidden" id="maths_b" name="maths_b" value="0"><input type="hidden" id="mailkey" name="mailkey" value='foo'><input onkeyup=checkMaths(); type="text" name="3A2x-Maths-iI81" id="3A2x-Maths-iI81" placeholder="Answer this question to enable the 'Send Message' button. (if no question appears here, please enable JavaScript)">                            </fieldset>
+                            <fieldset class="col-md-12 col-sm-12">
+                                <input id="mailSubmit" type="submit" class="button big default" value="Send Message">
+                            </fieldset>
+                        </form>
+                    </div> <!-- .contact-form -->
+                    </div>
+
+<!--footer responsive -->
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-3578434180456831"
+     data-ad-slot="8767010726"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                    <hr>
+
+                    <div class="row" id="footer">
+                        <div class="col-md-12 text-center">
+                            <p class="copyright-text">Copyright &copy; 2000 - 2019 <a target="_blank" href="http://steve-parker.org/cv/">Steve Parker</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="/js/shellscript.js"></script>
+        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=8bd22212-4b84-4446-a338-6552cbed4df2"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer> {lang: 'en-GB'} </script>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80984298-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80984298-2');
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80984298-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-80984298-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+    </body>
+</html>

@@ -1,0 +1,6 @@
+Sprite3D
+AnimatedSprite3D
+CollisionShape
+KinematicBody
+WorldEnvironment
+VisibilityNotifier

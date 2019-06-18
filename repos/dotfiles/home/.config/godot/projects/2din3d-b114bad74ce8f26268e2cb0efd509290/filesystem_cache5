@@ -1,0 +1,11 @@
+e676c8cf538667c7b7492316723f6fe3
+::res://::1556535991
+2D_in_3D.gd::GDScript::1556535989::0::1::<>Spatial<>::
+2D_in_3D.tscn::PackedScene::1556535989::0::1::<><>::res://2D_in_3D.gd<>res://pong.gd<>res://ball.png<>res://left_pallete.png<>res://right_pallete.png<>res://separator.png
+ball.png::StreamTexture::1556535989::1556535992::1::<><>::
+default_env.tres::Environment::1556535989::0::1::<><>::
+icon.png::StreamTexture::1556535989::1556535992::1::<><>::
+left_pallete.png::StreamTexture::1556535989::1556535992::1::<><>::
+pong.gd::GDScript::1556535989::0::1::<>Node2D<>::
+right_pallete.png::StreamTexture::1556535989::1556535992::1::<><>::
+separator.png::StreamTexture::1556535989::1556535992::1::<><>::

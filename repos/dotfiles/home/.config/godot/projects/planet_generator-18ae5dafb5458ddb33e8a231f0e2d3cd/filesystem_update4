@@ -1,0 +1,5 @@
+res://default_env.tres
+res://main.tscn
+res://planet_albedo.tres
+res://planet_roughness.tres
+res://water_mat_shader.tres

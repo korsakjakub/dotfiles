@@ -1,0 +1,7 @@
+[Bookmarks]
+[Recent]
+/home/jakub/Desktop/
+/home/jakub/Developer/BaconKing/Assets/donutlols/
+/home/jakub/Developer/Umbrella/
+/home/jakub/collada-exporter/
+/home/jakub/Developer/Bird/

@@ -1,0 +1,50 @@
+rename CW_07.pdf
+rename fig_41.jpeg
+open_with vim
+rename Jakub_Korsak_gestosc.ods
+rename Jakub_Korsak_gestosc_raport.pdf
+rename wym_alg.org
+open_with sc-im
+search raport
+rename find_the_file_you_wanna_change.png
+rename fork_the_repo.png
+rename 01_fork_the_repo.png
+rename 02_find_the_file_you_wanna_change.png
+rename 02_find_the_file_you_wanna_change-1.png
+rename 03_find_the_file_you_wanna_change-2.png
+rename 04_edit_it.png
+rename 05_create_a_pull_request.png
+rename 06_go_to_my_repo.png
+rename 07_compare_&_pull_request.png
+rename 08_do_it_pal.png
+rename how_to_contribute_images
+touch how_to_contribute.md
+search nota
+touch 
+touch raport_5
+shell mkdir raport_5
+shell mkdir tex
+open_with mathematica
+open_with nomacs
+open_with 1
+rename termistor-ex3.pdf
+open_with unzip
+search me
+search usb
+shell mkdir harry_potter
+shell mkdir harry
+search medi
+open_with 
+rename harry_potter
+rename game_of_thrones
+search rapo
+rename 
+search rap
+search Drop
+search 
+rename jakub-korsak-rownia.pdf
+rename Jakub-Korsak-termistor.pdf
+rename jk-termistor.pdf
+rename jk-arkusz-termistor.ods
+search media
+delete

@@ -1,0 +1,37 @@
+[filelight_part]
+antialias=true
+contrast=75
+minFontPitch=6
+scanAcrossMounts=false
+scanRemoteMounts=false
+scanRemovableMedia=false
+scheme=0
+showSmallFiles=false
+skipList[$e]=/dev/,/proc/,/sys/,/root/
+varyLabelFontSizes=true
+
+[general]
+File1[$e]=$HOME/.cache/spotify/
+File2[$e]=$HOME/.cache/
+File3[$e]=/home/
+File4[$e]=$HOME/Documents/Dropbox
+File5[$e]=$HOME/Documents/Dropbox/org/
+File6[$e]=$HOME/Documents/Dropbox/
+File7[$e]=$HOME/Documents/
+File8[$e]=$HOME/
+Name1[$e]=
+Name2[$e]=
+Name3[$e]=
+Name4[$e]=Dropbox
+Name5[$e]=
+Name6[$e]=
+Name7[$e]=
+Name8[$e]=
+
+[window]
+Height 1050=1027
+Height 900=861
+State=AAAA/wAAAAD9AAAAAAAABZwAAAMOAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHgBsAG8AYwBhAHQAaQBvAG4AVABvAG8AbABCAGEAcgEAAAHg/////wAAAAAAAAAAAAAAFgB2AGkAZQB3AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+Width 1440=1436
+Width 1680=1680

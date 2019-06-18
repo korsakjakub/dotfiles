@@ -1,0 +1,11 @@
+::res://::1540502545
+default_env.tres::Environment::1540502517::0::1::
+ground.dae::PackedScene::1540502018::1540502021::1::res://Material_001.material
+icon.png::StreamTexture::1540498049::1540498051::1::
+Material_001.material::PackedScene::1540501682::1540501685::1::res://Material_001.material
+Material_002.material::PackedScene::1540502470::1540502471::1::res://Material_001.material<>res://Material_002.material
+road.dae::PackedScene::1540502545::1540502546::1::res://Material_001.material<>res://Material_002.material
+umbrella_1.dae::PackedScene::1540501776::1540501778::1::res://Material_001.material
+::res://Scenes/::1540502517
+Title.tscn::PackedScene::1540502517::0::1::res://Scenes/Umbrella.tscn<>res://ground.dae<>res://road.dae
+Umbrella.tscn::PackedScene::1540502517::0::1::res://umbrella_1.dae

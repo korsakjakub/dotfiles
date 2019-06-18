@@ -1,0 +1,6 @@
+# GIMP gimp-color-picker-tool options
+
+(foreground (color-rgb 0.933333 0.933333 0.933333))
+(pick-target none)
+
+# end of gimp-color-picker-tool options

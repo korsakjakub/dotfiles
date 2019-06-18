@@ -1,0 +1,8 @@
+res://assets/animations/story_0.anim
+res://scenes/Main.tscn
+res://scenes/Player.tscn
+res://scenes/PlayerStory.gd
+res://scenes/Story1.tscn
+res://scripts/AnimationPlayer.gd
+res://scripts/CanvasLayer.gd
+res://scripts/Player.gd
