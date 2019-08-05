@@ -18,6 +18,6 @@
 *.color14: #37c3e6
 *.color15: #f9f9f9
 !! Transparency (0-255):
-st.alpha: 255
+st.alpha: 200
 !! Set a default font and font size as below:
 !! *.font: Monospace-14;

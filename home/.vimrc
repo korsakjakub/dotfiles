@@ -1,7 +1,5 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
-" activates filetype detection
-filetype plugin indent on
+filetype plugin indent on                  " required
 set noshowmode
 set noruler
 set noshowcmd
@@ -70,7 +68,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'lervag/vimtex'
 Plugin 'SirVer/ultisnips'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'jceb/vim-orgmode'
+"Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 let $PYTHONPATH='/usr/lib/python3.6/site-packages'
