@@ -7,6 +7,7 @@ set autoread
 set laststatus=2
 set path+=**
 set splitbelow splitright
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 let mapleader ="\<Space>"
 
@@ -37,9 +38,6 @@ let g:airline_detect_spelllang=1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='minimalist'
 
-let g:calendar_google_calendar = 1
-let g:calendar_google_task = 1
-
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
@@ -51,25 +49,33 @@ let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsSnippetsDir = '~/.vim/snips'
 let g:UltiSnipsSnippetDirectories = ['snips']
 
-"let g:ycm_key_list_stop_completion = ['<C-y>']
-"let g:ycm_filetype_blacklist = {
-    \ 'tex': 1
-    \}
+" NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree && Startify | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-n> :NERDTreeToggle<CR>
+
+" comfortable motion
+let g:comfortable_motion_scroll_down_key = "j"
+let g:comfortable_motion_scroll_up_key = "k"
+
 
 " set the runtime path to include Vundle and initialize
 set rtp+=/home/jakub/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'junegunn/goyo.vim'
-Plugin 'PotatoesMaster/i3-vim-syntax'
-Plugin 'itchyny/calendar.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'lervag/vimtex'
+Plugin 'mhinz/vim-startify'
 Plugin 'SirVer/ultisnips'
-Plugin 'jceb/vim-orgmode'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'fatih/vim-go'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'yuttie/comfortable-motion.vim'
 call vundle#end()
 
 let $PYTHONPATH='/usr/lib/python3.6/site-packages'
@@ -93,17 +99,16 @@ map <leader>g :setlocal spell! spelllang=pl<CR>
 " open file in a new tab
 map <leader>t :tabfind
 
-" open calendar.vim
-map <leader>c :Calendar -first_day=monday<CR>
-
-
 "manage latex and pdf
-map <C-p> :!pdflatex -jobname %:r % &> /dev/null<CR><CR>
+map <leader>l :!pdflatex -jobname %:r % &> /dev/null<CR><CR>
+
+" compile and run go
+map <leader>c :!go run %
 
 "show all buffers and select the one you want to edit
 nnoremap <C-i> :buffers<CR>:buffer<Space>
 "show all buggers and select the one you wanna delete
-nnoremap <C-u> :buffers<CR>:bdelete<Space>
+nnoremap <C-u> :buffers<CR>:bdelete!<Space>
 
 tnoremap <ESC> <C-\><C-n>
 

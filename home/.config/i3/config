@@ -239,10 +239,14 @@ bindsym $mod+r mode "resize"
 
 # things to start on startup
 exec_always         --no-startup-id     setxkbmap -layout pl -option caps:escape
+exec_always         --no-startup-id     dunst
 exec_always         --no-startup-id     xrandr --output DP1 --left-of eDP1 --output DP1 --mode 1680x1050 --output eDP1 --mode 1440x900
 exec_always         --no-startup-id     nitrogen --restore
 exec                --no-startup-id     redshift-gtk
 exec                --no-startup-id     dropbox
+exec_always         --no-startup-id     xinput set-prop bcm5974 308 0
+
+
 bindsym $mod+o                          bar mode toggle
 
 bar {

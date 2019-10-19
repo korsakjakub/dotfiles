@@ -16,18 +16,18 @@ wireless _first_ {
 }
 
 cpu_usage {
-        format = "💻: %usage"
+        format = "💻 %usage"
 }
 
 
 volume master {
         device = "pulse"
-        format = "♪: %volume"
+        format = "♪ %volume"
         format_muted = "muted"
 }
 
 battery all {
-        format = "⚡: %percentage"
+        format = "⚡ %percentage"
 }
 
 tztime local {
@@ -35,5 +35,5 @@ tztime local {
 }
 
 disk "/" {
-        format = "🏠: %avail"
+        format = "🏠 %avail"
 }

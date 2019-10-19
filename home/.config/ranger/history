@@ -1,37 +1,3 @@
-search usb
-shell mkdir harry_potter
-shell mkdir harry
-search medi
-open_with 
-rename harry_potter
-rename game_of_thrones
-search rapo
-search rap
-search Drop
-search 
-rename jakub-korsak-rownia.pdf
-rename Jakub-Korsak-termistor.pdf
-rename jk-termistor.pdf
-rename jk-arkusz-termistor.ods
-search media
-filter 
-rename wallpaper.jpg
-rename neon_haze.svg
-shell mkdir buttons
-rename gui_buttons
-rename continue.ong
-rename continue.png
-rename CandyParable
-open_with vim
-rename 
-rename lollipop
-rename lollipop.svg
-rename lollipop.png
-rename l12.png
-rename l1.png
-rename l2.png
-rename l3.png
-rename l01.png
 rename l02.png
 rename l03.png
 rename l04.png
@@ -42,9 +8,43 @@ rename l08.png
 rename l09.png
 rename l10.png
 rename l11.png
-delete
 rename l010.png
 rename l091.png
 rename l092.png
 rename top.png
 rename bot.png
+open_with inkscape
+open_with gimp
+search analiza-II
+search pdf
+open_with mpc
+open_with mpv
+shell 
+search bashrc
+open_with 
+search not
+rename wyklad17bbb
+rename wyklad16.tex
+rename wyklad17.tex
+rename Notatki Analiza II
+search Analiza
+search /media
+search Notatki
+rename Notatki Analiza II.pdf
+search Docum
+search nota
+open_with lmms
+search Docu
+search anali
+search pytani
+open_with vlc
+search III
+open_with feh
+rename eleonorka1.png
+rename franek1.png
+delete
+search media
+shell mkdir _images
+shell mv _images img
+open_with vim
+search Doc

@@ -5,6 +5,7 @@ XDG_DATA_HOME=$HOME/.config
 export XDG_DATA_HOME
 export TERMINAL=st
 export BROWSER=firefox
+export GOPATH="/home/user/Developer/go"
 
 #Aliases
 alias sl='ls'
@@ -30,3 +31,4 @@ alias fv='nvim $(fzf)'
 alias fcv='cd ~/.config; nvim $(fzf)'
 alias ff='feh $(fzf)'
 alias fz='zathura $(fzf)'
+alias r='ranger'
