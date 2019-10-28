@@ -1,6 +1,3 @@
-rename l02.png
-rename l03.png
-rename l04.png
 rename l05.png
 rename l06.png
 rename l07.png
@@ -32,19 +29,22 @@ search /media
 search Notatki
 rename Notatki Analiza II.pdf
 search Docum
-search nota
 open_with lmms
 search Docu
 search anali
 search pytani
-open_with vlc
 search III
 open_with feh
 rename eleonorka1.png
 rename franek1.png
-delete
 search media
 shell mkdir _images
 shell mv _images img
 open_with vim
 search Doc
+open_with vlc
+search /tmp
+search tmp
+search go
+delete
+search nota

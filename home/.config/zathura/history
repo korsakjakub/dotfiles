@@ -1329,14 +1329,14 @@ jumplist=
 [/home/jakub/main.pdf]
 page=0
 offset=0
-zoom=0.62941600576784429
+zoom=3.8494510426435458
 rotate=0
 pages-per-row=1
 first-page-column=1:2
 page-right-to-left=false
-position-x=0.5
-position-y=0.5
-time=1566060322
+position-x=0.49999999999999989
+position-y=0.188020733187763
+time=1572093551
 jumplist=
 
 [/home/jakub/Documents/notatki-analiza-II/pdf/wyklad9.pdf]
@@ -1756,16 +1756,16 @@ time=1570202612
 jumplist=0 0.48161764705882354 0.58672985781990517 0 0.5 0.41327014218009478 0 0.5 0.52701421800947867 0 0.5 0.41327014218009478 0 0.5 0.52701421800947867 0 0.5 0.41327014218009478 1 0.3981762917933131 0.57772347769881804 0 0.5 0.11380840511615765 
 
 [/home/jakub/Documents/notatki-analiza-III/w/main.pdf]
-page=15
+page=13
 offset=0
-zoom=2.0317324585198921
+zoom=0.94781818651119532
 rotate=0
 pages-per-row=1
 first-page-column=1:2
 page-right-to-left=false
-position-x=0.50140666520392951
-position-y=0.952409992756029
-time=1571346477
+position-x=0.70866141732283461
+position-y=0.55711842302090753
+time=1572269130
 jumplist=8 0.43423137876386686 0.94069640914037 0 0.5 0.05930359085963003 1 0.43423137876386686 0.13003264417845722 0 0.5 0.061207834602829164 15 0.5 0.94352075136438618 0 0.5 0.01607142857142857 
 
 [/home/jakub/Documents/notatki-analiza-III/w/tex/w2.pdf]
@@ -1867,7 +1867,46 @@ rotate=0
 pages-per-row=1
 first-page-column=1:2
 page-right-to-left=false
-position-x=0.42478101608536389
-position-y=0.59208687414454453
-time=1571385781
+position-x=0.7384615384615385
+position-y=0.82956797463337295
+time=1571656396
 jumplist=
+
+[/home/jakub/Documents/notatki-analiza-III/w/tex/w6.pdf]
+page=1
+offset=0
+zoom=0.92001737706177678
+rotate=0
+pages-per-row=1
+first-page-column=1:2
+page-right-to-left=false
+position-x=0.56490872210953347
+position-y=0.73521347434390905
+time=1571662949
+jumplist=0 0.47826086956521741 0.62413793103448278 0 0.5 0.37586206896551722 0 0.5 0.44482758620689655 0 0.5 0.37586206896551722 0 0.47826086956521741 0.62413793103448278 0 0.5 0.37586206896551722 
+
+[/home/jakub/Documents/notatki-analiza-III/w/tex/w7.pdf]
+page=2
+offset=0
+zoom=0.75377527350311135
+rotate=0
+pages-per-row=1
+first-page-column=1:2
+page-right-to-left=false
+position-x=0.44183168316831684
+position-y=0.77060191404404321
+time=1571990533
+jumplist=0 0.5 0.57630331753554498 0 0.5 0.42369668246445497 
+
+[/home/jakub/Documents/notatki-analiza-III/w/tex/w8.pdf]
+page=2
+offset=0
+zoom=0.90909090909090906
+rotate=0
+pages-per-row=1
+first-page-column=1:2
+page-right-to-left=false
+position-x=0.39227315689317649
+position-y=0.82282996432818079
+time=1572271392
+jumplist=0 0.36942328618063114 0.43271656854499591 0 0.5 0.3666947014297729 

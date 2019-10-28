@@ -100,7 +100,7 @@ bindsym $mod+p                  exec --no-startup-id inkscape-template
 #
 #bindsym $mod+z                 exec
 #bindsym $mod+c                 exec
-bindsym $mod+b                  exec dmenu-surf
+bindsym $mod+b                  exec firefox
 bindsym $mod+n                  exec godot
 bindsym $mod+m                  exec $term -e mpsyt
 
@@ -269,6 +269,3 @@ client.focused              #282828     #282828         #ffffff     #282828
 client.focused_inactive     #282828     #282828         #ffffff     #282828
 client.unfocused            #282828     #282828         #ffffff     #282828
 client.urgent               #282828     #282828         #ffffff     #282828
-
-# set wallpaper
-# exec_always             feh --bg-fill /home/jakub/Pictures/wallpaper.jpg

@@ -103,7 +103,10 @@ map <leader>t :tabfind
 map <leader>l :!pdflatex -jobname %:r % &> /dev/null<CR><CR>
 
 " compile and run go
-map <leader>c :!go run %
+map <leader>c :GoRun<CR>
+
+" run tests on go
+map <leader>v :GoTest<CR>
 
 "show all buffers and select the one you want to edit
 nnoremap <C-i> :buffers<CR>:buffer<Space>
