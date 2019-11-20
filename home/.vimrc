@@ -76,6 +76,8 @@ Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'yuttie/comfortable-motion.vim'
+Plugin 'calviken/vim-gdscript3'
+Plugin 'ervandew/supertab'
 call vundle#end()
 
 let $PYTHONPATH='/usr/lib/python3.6/site-packages'
@@ -101,6 +103,7 @@ map <leader>t :tabfind
 
 "manage latex and pdf
 map <leader>l :!pdflatex -jobname %:r % &> /dev/null<CR><CR>
+autocmd BufWritePost *.tex ":!pdflatex -jobname %:r % &> /dev/null"
 
 " compile and run go
 map <leader>c :GoRun<CR>

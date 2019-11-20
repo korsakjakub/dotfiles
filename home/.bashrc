@@ -1,10 +1,11 @@
 set -o vi
-source '/home/jakub/.bash-powerline.sh'
+source $HOME/.bash-powerline.sh
 PATH=$PATH:/home/jakub/.gem/ruby/2.6.0/bin:/home/jakub/.local/bin
 export XDG_DATA_HOME=$HOME/.config
+export XDG_CONFIG_HOME=$HOME/.config
 export TERMINAL=st
 export BROWSER=firefox
-export GOPATH="/home/jakub/Developer/go"
+export GOPATH=$HOME/Developer/go
 
 #Aliases
 alias sl='ls'
@@ -32,3 +33,4 @@ alias ff='feh $(fzf)'
 alias fz='zathura $(fzf)'
 alias r='ranger'
 alias gg='cd ~/Developer/go/src/github.com/korsakjakub'
+alias o='xdg-open'

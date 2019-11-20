@@ -1,24 +1,8 @@
-rename l05.png
-rename l06.png
-rename l07.png
-rename l08.png
-rename l09.png
-rename l10.png
-rename l11.png
-rename l010.png
-rename l091.png
-rename l092.png
-rename top.png
-rename bot.png
-open_with inkscape
-open_with gimp
 search analiza-II
 search pdf
 open_with mpc
 open_with mpv
-shell 
 search bashrc
-open_with 
 search not
 rename wyklad17bbb
 rename wyklad16.tex
@@ -37,14 +21,30 @@ search III
 open_with feh
 rename eleonorka1.png
 rename franek1.png
-search media
 shell mkdir _images
 shell mv _images img
 open_with vim
 search Doc
-open_with vlc
 search /tmp
 search tmp
 search go
-delete
 search nota
+search g
+search Ca
+open_with mathematica
+shell mkdir Music
+search media/usb
+search usb
+!
+shell mkdir Videos
+open_with 
+shell mkdir ebook
+shell mkdir Pictures
+shell mv ebook Ebook
+shell mv ebook Ebook/
+shell 
+open_with ncmcpp
+open_with vlc
+delete
+search media
+search 
