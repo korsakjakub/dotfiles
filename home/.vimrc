@@ -1,5 +1,5 @@
 set nocompatible              " be iMproved, required
-filetype plugin indent on                  " required
+filetype plugin indent on     " required
 set noshowmode
 set noruler
 set noshowcmd
@@ -12,7 +12,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let mapleader ="\<Space>"
 
 " set colorsheme
-colorscheme dracula
+colorscheme gruvbox
 
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -41,6 +41,8 @@ let g:airline_theme='minimalist'
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+
+let g:python3_host_prog='/usr/bin/python3.8'
 
 let g:UltiSnipsExpandTrigger = '<C-x>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
@@ -78,6 +80,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'calviken/vim-gdscript3'
 Plugin 'ervandew/supertab'
+Plugin 'udalov/kotlin-vim'
 call vundle#end()
 
 let $PYTHONPATH='/usr/lib/python3.6/site-packages'
@@ -101,6 +104,8 @@ map <leader>g :setlocal spell! spelllang=pl<CR>
 " open file in a new tab
 map <leader>t :tabfind
 
+map <leader>x :!g++ % -o %:r && ./%:r
+
 "manage latex and pdf
 map <leader>l :!pdflatex -jobname %:r % &> /dev/null<CR><CR>
 autocmd BufWritePost *.tex ":!pdflatex -jobname %:r % &> /dev/null"
@@ -118,7 +123,7 @@ nnoremap <C-u> :buffers<CR>:bdelete!<Space>
 
 tnoremap <ESC> <C-\><C-n>
 
-map <C-y> :term<CR>
+map <leader>y :term<CR>
 
 " Remove trailing whitespace possibly slowing down
 autocmd BufWritePre * %s/\s\+$//e

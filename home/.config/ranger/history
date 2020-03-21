@@ -1,50 +1,50 @@
-search analiza-II
-search pdf
-open_with mpc
-open_with mpv
-search bashrc
-search not
-rename wyklad17bbb
-rename wyklad16.tex
-rename wyklad17.tex
-rename Notatki Analiza II
-search Analiza
-search /media
-search Notatki
-rename Notatki Analiza II.pdf
-search Docum
-open_with lmms
-search Docu
-search anali
-search pytani
-search III
-open_with feh
-rename eleonorka1.png
-rename franek1.png
-shell mkdir _images
-shell mv _images img
-open_with vim
-search Doc
-search /tmp
-search tmp
-search go
+shell mkdir 
+shell mkdir abc
+search senio
+rename usbl
+search me
+rename geometry_mini_eTPC_2018-06-19T15-13-33.941.dat
 search nota
-search g
-search Ca
+search cache
+search spoti
+search yay
+rename .git
+search m
+open_with mpv --sub-auto=all
+open_with h
+search no
+open_with firefox
+open_with vim
+search tmp
+rename 
+open_with sc-im
+filter 
+open_with mathemtaica
 open_with mathematica
-shell mkdir Music
-search media/usb
-search usb
-!
-shell mkdir Videos
-open_with 
-shell mkdir ebook
-shell mkdir Pictures
-shell mv ebook Ebook
-shell mv ebook Ebook/
 shell 
-open_with ncmcpp
-open_with vlc
+open_with slic3r
+search Mr
+rename wall.jpg
+shell xwallpaper --zoom ~/Pictures/doge.jpg
+open_with 
+shell qnapi Harry.Potter.And.The.Deathly.Hallows.Part.2.2011.720p.BrRip.264.YIFY.mkv-muxed.mp4
+search te
+open_with%space2
+open_with 2
+deletey
+shell mkdir and3_2011
+search 2017
+search 2016
+open_with%space
+search 2014
+search 2015
+search indonezja
+open_with 1
+shell e
+shell em
+search ipt
+open_with%space0
+open_with 0
 delete
+open_with vlc
 search media
-search 

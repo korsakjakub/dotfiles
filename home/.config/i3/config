@@ -1,14 +1,7 @@
-#
-# i3-gaps config ~Jakub Korsak, 2017
-# Dank af, m8
-#
-
-# mod is Cmd key on apple keyboards and probably windows key on other machines?
+# minimal, bindings moved to sxhkd
 
 exec --no-startup-id wmctrl -c Plasma
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
-
-# Avoid tiling popups, dropdown windows from plasma
 for_window [class="plasmashell"] floating enable
 for_window [class="Plasma"] floating enable
 for_window [class="krunner"] floating enable
@@ -16,9 +9,6 @@ for_window [class="Kmix"] floating enable
 for_window [class="Klipper"] floating enable
 for_window [class="Plasmoidviewer"] floating enable
 
-# >>> Window Rules <<<
-
-# >>> Avoid tiling for non-Plasma stuff <<<
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable
@@ -28,43 +18,17 @@ for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 set $mod Mod4
 
-# used terminal
-set $term st
-
-set $dmenu dmenu_run -h 23
-
-# used browser
-set $browser firefox
-
-# Font used
 font pango:DejaVu Sans Mono 8
-
-# hide borders
 for_window [class="^.*"] border pixel 3
-
-#back and forth
+smart_borders on
+floating_modifier $mod
 workspace_auto_back_and_forth yes
-
 exec_always workspace 1
+bindsym $mod+Shift+q kill
+bindsym $mod+o bar mode toggle
 
 bindsym $mod+g mode "gaps"
-#smart_gaps on
-smart_borders on
-
-bindsym $mod+XF86PowerOff mode "[p]oweroff [r]eboot"
-
-
-mode "[p]oweroff [r]eboot"
-{
-    bindsym r exec reboot
-    bindsym p exec poweroff
-
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-
 mode "gaps" {
-    # manage gaps
     bindsym h gaps outer current minus 8
     bindsym k gaps inner current plus 8
     bindsym j gaps inner current minus 8
@@ -75,113 +39,35 @@ mode "gaps" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
-# start a terminal
-bindsym $mod+Return exec $term
-bindsym $mod+Shift+Return exec samedir
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
-# Binds not used by i3 related stuff
-#
-# Row 0:
-bindsym XF86MonBrightnessDown           exec xbacklight -dec 5 && dunstify --replace=10 "bl "$(bl_get)
-bindsym $mod+XF86MonBrightnessDown      exec xbacklight -dec 100 && kbdlight down 100"
-bindsym XF86MonBrightnessUp             exec xbacklight -inc 5 && dunstify --replace=10 "bl "$(bl_get)
-bindsym $mod+XF86MonBrightnessUp        exec xbacklight -inc 100 && kbdlight up 100
-bindsym XF86LaunchA                     exec --no-startup-id $term -e ranger
-bindsym $mod+XF86LaunchA                exec --no-startup-id dmenu-mount
-bindsym Shift+XF86LaunchA               exec systemsettings5
-bindsym XF86LaunchB                     exec $term -e nvim ~/.vimrc
-bindsym Shift+XF86LaunchB              exec $term -e nvim ~/.config/i3/config
-bindsym $mod+XF86LaunchB                exec --no-startup-id dmenu-unmount
-bindsym XF86KbdBrightnessDown           exec --no-startup-id kbdlight down 5 && dunstify --replace=11 "kbl "$(kbl_get)"%"
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
-bindsym XF86KbdBrightnessUp             exec --no-startup-id kbdlight up 5  && dunstify --replace=11 "kbl "$(kbl_get)"%"
-# bindsym XF86AudioPrev                   exec
-# bindsym XF86AudioPause                    exec
-# bindsym XF86AudioNext                   exec
-bindsym XF86AudioMute                   exec --no-startup-id pactl set-sink-mute 0 toggle
-bindsym XF86AudioLowerVolume            exec --no-startup-id pactl set-sink-volume 0 -2% && dunstify --replace=12 "vol "$(amixer_get_sound)
-bindsym XF86AudioRaiseVolume            exec --no-startup-id pactl set-sink-volume 0 +2% && dunstify --replace=12 "vol "$(amixer_get_sound)
-# bindsym XF86PowerOff
-
-# Row 1:
-
-bindsym $mod+q                  exec --no-startup-id pavucontrol
-bindsym $mod+t                  exec $term -e systemctl
-bindsym $mod+Shift+t            exec $term -e htop
-#bindsym $mod+y                  exec
-#bindsym $mod+i                  exec lid
-bindsym $mod+p                  exec --no-startup-id inkscape-template
-#bindsym $mod+shift+p
-#
-# Row 2:
-# bindsym $mod+shift+f
-# Row 3:
-#
-bindsym $mod+Shift+x            exec i3lock -c 282828 -l --blur=5 -m -k --insidevercolor=282828ff --keyhlcolor=ffffffff --timecolor=ffffffff --datecolor=ffffffff --veriftext="sprawdzam" --wrongtext="źle"
-#bindsym $mod+z                 exec
-#bindsym $mod+c                 exec
-bindsym $mod+b                  exec $browser
-bindsym $mod+n                  exec godot
-bindsym $mod+m                  exec $term -e mpsyt
-
-# kill focused window
-bindsym $mod+Shift+q            kill
-
-# start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id $dmenu
-
-# change focus
-bindsym $mod+h              focus left
-bindsym $mod+j              focus down
-bindsym $mod+k              focus up
-bindsym $mod+l              focus right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left           focus left
-bindsym $mod+Down           focus down
-bindsym $mod+Up             focus up
-bindsym $mod+Right          focus right
-
-# move focused window
-bindsym $mod+Shift+h        move left
-bindsym $mod+Shift+j        move down
-bindsym $mod+Shift+k        move up
-bindsym $mod+Shift+l        move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left     move left
-bindsym $mod+Shift+Down     move down
-bindsym $mod+Shift+Up       move up
-bindsym $mod+Shift+Right    move right
-
-# split in horizontal orientation
-bindsym $mod+x              split h
-
-# split in vertical orientation
-bindsym $mod+v              split v
-
-# enter fullscreen mode for the focused container
-bindsym $mod+f              fullscreen toggle
-
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s              layout stacking
-bindsym $mod+w              layout tabbed
-bindsym $mod+e              layout toggle split
-
-# toggle tiling / floating
-bindsym $mod+Shift+space    floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+space          focus mode_toggle
-
-# focus the parent container
-bindsym $mod+a              focus parent
-
-bindsym $mod+z              exec ~/.vim-anywhere/bin/run
+bindsym $mod+x split h
+bindsym $mod+v split v
+bindsym $mod+f fullscreen toggle
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
 
 set $w1 "1 main "
 set $w2 "2"
@@ -194,8 +80,6 @@ set $w8 "8 blend "
 set $w9 "9 math "
 set $w10 "10 mus "
 
-
-# switch to workspace
 bindsym $mod+1 workspace $w1
 bindsym $mod+2 workspace $w2
 bindsym $mod+3 workspace $w3
@@ -216,7 +100,6 @@ for_window [class="Spotify"] move to workspace $w10
 for_window [title="anywhere"] floating enable
 for_window [class="Godot_Engine"] floating enable; resize set 800 600
 
-# move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $w1
 bindsym $mod+Shift+2 move container to workspace $w2
 bindsym $mod+Shift+3 move container to workspace $w3
@@ -228,51 +111,31 @@ bindsym $mod+Shift+8 move container to workspace $w8
 bindsym $mod+Shift+9 move container to workspace $w9
 bindsym $mod+Shift+0 move container to workspace $w10
 
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
 
-# reload the configuration file
-bindsym $mod+Shift+c        reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r        restart
-
-# resize window (you can also use the mouse for that)
+bindsym $mod+r mode "resize"
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
         bindsym h resize shrink width 5 px or 5 ppt
         bindsym j resize grow height 5 px or 5 ppt
         bindsym k resize shrink height 5 px or 5 ppt
         bindsym l resize grow width 5 px or 5 ppt
-
-        # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
-
-
-# things to start on startup
-exec_always         --no-startup-id     setxkbmap -layout pl -option caps:escape
-exec_always         --no-startup-id     dunst
-exec_always         --no-startup-id     xrandr --output DP1 --left-of eDP1 --output DP1 --mode 1680x1050 --output eDP1 --mode 1440x900
-exec_always         --no-startup-id     nitrogen --restore
-exec                --no-startup-id     redshift-gtk
-#exec                --no-startup-id     dropbox
-exec_always         --no-startup-id     xinput set-prop bcm5974 308 0
-exec_always         --no-startup-id     compton
-
-
-bindsym $mod+o                          bar mode toggle
+exec_always setsid sxhkd
+exec_always --no-startup-id setxkbmap -layout pl -option caps:escape
+exec_always --no-startup-id dunst
+exec_always --no-startup-id xrandr --output DP1 --left-of eDP1 --output DP1 --mode 1680x1050 --output eDP1 --mode 1440x900
+exec        --no-startup-id redshift-gtk
+exec_always --no-startup-id xinput set-prop bcm5974 308 0
+exec_always --no-startup-id compton
+exec_always --no-startup-id xwallpaper --zoom ~/.config/wall.jpg
 
 bar {
     status_command i3status
@@ -289,7 +152,6 @@ bar {
         binding_mode #282828 #282828 #ffffff
     }
 }
-#colors                     border      background      text        indicator
 client.focused              #282828     #282828         #ffffff     #282828
 client.focused_inactive     #282828     #282828         #ffffff     #282828
 client.unfocused            #282828     #282828         #ffffff     #282828

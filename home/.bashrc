@@ -1,11 +1,5 @@
 set -o vi
 source $HOME/.bash-powerline.sh
-PATH=$PATH:/home/jakub/.gem/ruby/2.6.0/bin:/home/jakub/.local/bin
-export XDG_DATA_HOME=$HOME/.config
-export XDG_CONFIG_HOME=$HOME/.config
-export TERMINAL=st
-export BROWSER=firefox
-export GOPATH=$HOME/Developer/go
 
 #Aliases
 alias sl='ls'
@@ -30,7 +24,10 @@ alias gm='gcalcli calm'
 alias fv='nvim $(fzf)'
 alias fcv='cd ~/.config; nvim $(fzf)'
 alias ff='feh $(fzf)'
-alias fz='zathura $(fzf)'
+alias fz='zathura $(find | grep .pdf$ | fzf)'
 alias r='ranger'
 alias gg='cd ~/Developer/go/src/github.com/korsakjakub'
 alias o='xdg-open'
+alias 4sem='cd ~/Documents/4sem'
+
+export GOPATH=/home/jakub/Developer/go
